@@ -7,9 +7,9 @@ export function NavigationBar() {
   const pathname = usePathname();
 
   const navItems = [
-    { label: "about", href: "/about" },
+    { label: "about me", href: "/about" },
     { label: "projects", href: "/project" },
-    { label: "contact", href: "/contact" },
+    { label: "contacts", href: "/contact" },
   ];
 
   return (
@@ -23,7 +23,7 @@ export function NavigationBar() {
       <nav
         className="
           bg-card sticky top-24 flex flex-col gap-2
-          rounded-lg border p-2 shadow-md
+          rounded-lg border border-[#443d3b] p-2 shadow-md
           transition-[transform_box-shadow] ease-out hover:shadow-xl
         "
       >
