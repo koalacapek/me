@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { NavigationBar } from "@/components/NavigationBar";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +31,12 @@ export default function RootLayout({
       <body
         className={`${fontInter.className} bg-background flex max-h-screen min-h-screen w-screen flex-col items-center overflow-hidden antialiased selection:bg-neutral-600 selection:text-neutral-100 dark:selection:bg-neutral-100 dark:selection:text-neutral-600`}
       >
-        <div className="relative mx-auto h-full w-screen [&>article]:mx-auto px-8 pt-24 pb-40 md:max-w-md md:pb-24 lg:max-w-xl lg:pb-24 xl:max-w-2xl xl:pb-24">
-          {children}
-        </div>
+        <main className="h-screen max-h-screen w-screen overflow-hidden">
+          <div className="relative mx-auto h-full w-screen [&>article]:mx-auto px-8 pt-24 pb-40 md:max-w-md md:pb-24 lg:max-w-xl lg:pb-24 xl:max-w-2xl xl:pb-24">
+            <NavigationBar />
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );

@@ -34,11 +34,9 @@ export function NavigationBar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`
-                rounded-lg px-3 py-1.5 text-sm transition-colors
-                hover:bg-secondary
-                ${isActive ? "bg-secondary font-semibold" : "font-normal"}
-              `}
+              className={`rounded-lg px-3 py-1.5 text-sm transition-colors hover:bg-secondary ${
+                isActive ? "bg-secondary font-semibold" : "font-normal"
+              }`}
             >
               {item.label}
             </Link>
