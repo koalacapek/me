@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import { NavigationBar } from "@/components/NavigationBar";
-import { TooltipProvider } from "@/components/ui/tooltip";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { Navbar } from "@/components/NavBar";
 
 const fontInter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +22,7 @@ export default function RootLayout({
       >
         <main className="h-screen max-h-screen w-screen overflow-hidden">
           <div className="relative mx-auto h-full w-screen [&>article]:mx-auto px-8 pt-24 pb-40 md:max-w-md md:pb-24 lg:max-w-xl lg:pb-24 xl:max-w-2xl xl:pb-24">
-            <NavigationBar />
+            <Navbar />
             {children}
           </div>
         </main>

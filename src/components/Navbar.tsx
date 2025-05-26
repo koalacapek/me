@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function NavigationBar() {
+export function Navbar() {
   const pathname = usePathname();
 
   const navItems = [
