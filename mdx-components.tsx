@@ -1,4 +1,5 @@
 import CustomLink from "@/components/CustomLink";
+import Image from "next/image";
 
 import type { MDXComponents } from "mdx/types";
 
@@ -19,6 +20,15 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     p: (props: any) => <p className="text-sm">{props.children}</p>,
     li: (props: any) => <li className="text-sm my-0">{props.children}</li>,
+    img: (props) => (
+      <Image
+        {...props}
+        width={props.width || 500}
+        height={props.height || 500}
+        alt={props.alt || ""}
+        className={props.className}
+      />
+    ),
     // pre: (props: any) => <CopyablePre {...props}>{props.children}</CopyablePre>,
     CustomLink,
     ...components,
