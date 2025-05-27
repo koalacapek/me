@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function Navbar() {
+export default function Navbar() {
   const pathname = usePathname();
 
   const navItems = [
     { label: "about me", href: "/about" },
-    { label: "projects", href: "/project" },
-    { label: "contacts", href: "/contact" },
+    { label: "my journey", href: "/journey" },
+    { label: "projects", href: "/projects" },
+    { label: "contacts", href: "/contacts" },
   ];
 
   return (
