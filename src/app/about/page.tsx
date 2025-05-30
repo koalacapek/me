@@ -1,13 +1,9 @@
-import type { MDXComponents } from "mdx/types";
 import { useMDXComponents } from "../../../mdx-components";
-import CustomLink from "@/components/CustomLink";
 import Name from "@/components/Name";
 
 export default async function Page() {
   const { default: MDXContent } = await import("@/content/about/index.mdx");
-  const components = useMDXComponents({
-    CustomLink,
-  } as MDXComponents);
+  const components = useMDXComponents({});
 
   return (
     <article className="prose prose-stone dark:prose-invert relative">

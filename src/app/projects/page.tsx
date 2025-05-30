@@ -1,14 +1,8 @@
-import type { MDXComponents } from "mdx/types";
 import { useMDXComponents } from "../../../mdx-components";
-import CustomLink from "@/components/CustomLink";
-import BadgeGroup from "@/components/BadgeGroup";
 
 export default async function Page() {
   const { default: MDXContent } = await import("@/content/projects/index.mdx");
-  const components = useMDXComponents({
-    CustomLink,
-    BadgeGroup,
-  } as MDXComponents);
+  const components = useMDXComponents({});
 
   return (
     <article className="prose prose-stone dark:prose-invert relative">

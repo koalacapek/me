@@ -1,5 +1,7 @@
 import CustomLink from "@/components/CustomLink";
+import BadgeGroup from "@/components/BadgeGroup";
 import Image from "next/image";
+import Link from "next/link";
 
 import type { MDXComponents } from "mdx/types";
 
@@ -31,6 +33,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     // pre: (props: any) => <CopyablePre {...props}>{props.children}</CopyablePre>,
     CustomLink,
+    BadgeGroup,
+    Link,
     ...components,
   };
 }
