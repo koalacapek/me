@@ -28,7 +28,7 @@ export default async function Page(props: ISlugProp) {
 
   return (
     <article className="prose prose-stone dark:prose-invert relative">
-      <Name />
+      <h1 className="font-bold text-xl">Dues</h1>
       <MDXContent components={components} />
     </article>
   );

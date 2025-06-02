@@ -1,0 +1,81 @@
+> Never miss a university deadline again.
+
+<img src="/dues.png" alt="Dues App Screenshot" className="rounded-xl my-6" />
+
+**Dues** is a web app that helps students manage their university assignments by reminding them of upcoming deadlines — ensuring they never miss a thing. It was built during a hackathon hosted by UNSW Google Developer Student Club (GDSC) and **won first place**. 🎉
+
+---
+
+## 💡 Features
+
+- Google Calendar integration for auto-syncing deadlines
+- PDF syllabus parser to auto-import assignment dates
+- Real-time deadline reminders
+- User-friendly interface built with Tailwind CSS
+- Dark mode support out of the box
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 14
+- **Database**: Firebase Firestore
+- **Styling**: TailwindCSS with custom themes
+- **Deployment**: Vercel
+
+<BadgeGroup
+  tags={["nextjs", "typescript", "firebase", "tailwindcss", "vercel"]}
+/>
+
+---
+
+## 🔗 Try It Out
+
+You can explore the live project here:
+
+<CustomLink href="https://dues.vercel.app" target="_blank">
+  https://dues.vercel.app
+</CustomLink>
+
+---
+
+## 📚 Motivation
+
+As a UNSW student, I often found myself juggling multiple courses, each with its own set of assignments, quizzes, and project deadlines. Like many students, I relied heavily on Moodle, course outlines, and scattered calendar entries to keep track — which became overwhelming fast.
+What made it more difficult was how each course had different formats for delivering important dates: some used PDFs, others buried them in announcements. There was no centralized system for students to track everything at a glance. I realized this was a problem not just for me, but for many of my peers.
+
+That's when I decided to build Dues — a tool that would serve as a single source of truth for all upcoming deadlines. The goal wasn't just to create a calendar app, but something built for students, with real reminders, calendar syncing, and even a PDF parser to pull deadlines directly from course outlines.
+Ultimately, I wanted to build something that I personally needed — a practical, helpful tool that reduced mental clutter and made academic life a bit more manageable.
+
+---
+
+## 🧠 Learnings
+
+- How to parse and extract structured data from PDFs
+- Implementing sign in using google account
+- Using Firebase effectively in a Next.js environment
+- Improving UI/UX for student-centric tools
+
+---
+
+## 🛠 What Can Be Improved
+
+While **Dues** is working just fine, there are several areas of improvement for it:
+
+- **User Authentication**  
+  Currently, there are no authentication except for Google, which means users need to manually add courses every time they visit Dues. Integrating proper authentication would make it more secure and personalized.
+
+- **Collaboration Features**  
+  Supporting group projects or shared calendars between classmates would be a great addition. This could include task assignment, shared reminders, or synced group deadlines.
+
+- **Better PDF Parsing**  
+  The current PDF deadline extractor works for a certain template of course outline by analyzing patterns. Improvements could include more robust natural language processing (NLP) to better understand academic phrasing across different course outlines.
+
+- **Mobile Experience**  
+  While the app is responsive, building a dedicated mobile version or a progressive web app (PWA) could provide offline access and push notifications.
+
+- **Analytics & Insights**  
+  Adding usage stats or visual summaries (e.g., weekly workload charts) could help students manage their time more effectively.
+
+- **UNSW Integration**  
+  Ideally, Dues could connect directly with UNSW systems (Moodle, course APIs) to automate syncing of deadlines without manual uploads. Collaborating with UNSW to gain data will be hugely beneficial for Dues.
