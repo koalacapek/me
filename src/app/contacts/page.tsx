@@ -1,8 +1,8 @@
-import { useMDXComponents } from "../../../mdx-components";
+import { getMDXComponents } from "../../../mdx-components";
 
 export default async function Page() {
   const { default: MDXContent } = await import("@/content/contacts/index.mdx");
-  const components = useMDXComponents({});
+  const components = getMDXComponents({});
 
   return (
     <article className="prose prose-stone dark:prose-invert relative">
