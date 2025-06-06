@@ -1,7 +1,5 @@
 "use client";
 
-import { unstable_ViewTransition as ViewTransition } from "react";
-
 export default function Name() {
   return (
     <h1 className="font-bold text-xl w-fit">
