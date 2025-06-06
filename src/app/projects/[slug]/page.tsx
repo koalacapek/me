@@ -1,5 +1,5 @@
 import type { MDXComponents } from "mdx/types";
-import { getMDXComponents } from "../../../../mdx-components";
+import { useMDXComponents } from "../../../../mdx-components";
 import CustomLink from "@/components/CustomLink";
 
 interface ISlugProp {
@@ -24,7 +24,7 @@ export default async function Page(props: ISlugProp) {
   const { default: MDXContent } = await import(
     `@/content/projects/${slug}.mdx`
   );
-  const components = getMDXComponents({
+  const components = useMDXComponents({
     CustomLink,
   } as MDXComponents);
 

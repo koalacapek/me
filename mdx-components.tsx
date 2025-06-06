@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+
 import CustomLink from "@/components/CustomLink";
 import BadgeGroup from "@/components/BadgeGroup";
 import Image from "next/image";
@@ -5,7 +7,7 @@ import Link from "next/link";
 
 import type { MDXComponents } from "mdx/types";
 
-export function getMDXComponents(components: MDXComponents): MDXComponents {
+export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h1: (props: any) => <h1 {...props}>{props.children}</h1>,
     h2: (props: any) => (
