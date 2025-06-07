@@ -16,7 +16,7 @@ export default function Navbar() {
     { label: "contacts", href: "/contacts" },
   ];
 
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) => pathname.includes(href);
 
   return (
     <>
