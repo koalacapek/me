@@ -3,7 +3,7 @@
 @plugin 'tailwind-scrollbar';
 
 @theme {
-  --color-secondary: #2a2524;
+  --color-black-1: #2a2524;
   --color-off-white: #f9f9f5;
   --color-gray-muted: #a39f97;
   --color-border: #433a37;

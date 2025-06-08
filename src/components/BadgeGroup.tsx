@@ -12,7 +12,7 @@ export default function BadgeGroup({ tags }: BadgeGroupProps) {
       {tags.map((tag) => (
         <Badge
           key={tag}
-          className="border- rounded-full px-1.5 py-0.5 text-[10px] font-normal transition-transform select-none hover:scale-105"
+          className="border-border rounded-full px-1.5 py-0.5 text-[10px] font-normal transition-transform select-none hover:scale-105"
           variant="secondary"
         >
           {tag}

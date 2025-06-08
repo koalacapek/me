@@ -14,12 +14,12 @@ export default function CustomLink({
   target?: React.HTMLAttributeAnchorTarget;
 }) {
   const linkClass = [
-    "text-gray-muted hover:text-off-white font-normal transition-colors [&>p]:m-0",
+    "text-gray-muted dark:hover:text-off-white hover:text-black-1 font-normal transition-colors [&>p]:m-0",
     isMobile || isTablet ? "underline underline-offset-2" : "no-underline",
   ].join(" ");
 
   const spanClass =
-    "bg-off-white absolute bottom-0 left-0 rounded-full h-0 w-0 opacity-0 transition-[opacity_width] duration-300 group-hover:h-[1px] group-hover:w-full group-hover:opacity-100";
+    "dark:bg-off-white bg-black-1 absolute bottom-0 left-0 rounded-full h-0 w-0 opacity-0 transition-[opacity_width] duration-300 group-hover:h-[1px] group-hover:w-full group-hover:opacity-100";
 
   return (
     <span className="group relative m-0 inline-block w-fit">

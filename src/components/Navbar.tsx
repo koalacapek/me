@@ -42,9 +42,9 @@ export default function Navbar() {
               key={item.href}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className={`rounded-lg px-3 py-2 text-sm transition-colors hover:bg-secondary ${
+              className={`rounded-lg px-3 py-2 text-sm transition-colors hover:bg-neutral-200 ${
                 isActive(item.href)
-                  ? "bg-secondary font-semibold"
+                  ? "bg-neutral-200 font-semibold dark:bg-black-1"
                   : "font-normal"
               }`}
             >
@@ -73,9 +73,9 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`rounded-lg px-3 py-1.5 text-sm transition-colors hover:bg-secondary ${
+              className={`rounded-lg px-3 py-1.5 text-sm transition-colors dark:hover:bg-black-1 hover:bg-neutral-200  ${
                 isActive(item.href)
-                  ? "bg-secondary font-semibold"
+                  ? "dark:bg-black-1 bg-neutral-200 font-semibold"
                   : "font-normal"
               }`}
             >
