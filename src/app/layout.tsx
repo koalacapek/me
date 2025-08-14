@@ -1,20 +1,20 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
-import { unstable_ViewTransition as ViewTransition } from "react";
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
+import Navbar from "@/components/Navbar"
+import { unstable_ViewTransition as ViewTransition } from "react"
 
-const fontInter = Inter({ subsets: ["latin"] });
+const fontInter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Hans Kristian Reynaldi | me",
+  title: "me",
   description: "Some things about me",
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -31,5 +31,5 @@ export default function RootLayout({
         </ViewTransition>
       </body>
     </html>
-  );
+  )
 }

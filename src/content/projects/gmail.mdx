@@ -1,0 +1,52 @@
+> Email that feels fast and familiar.
+
+**Gmail Clone** is a minimal email client experience featuring inbox, labels, threaded conversations, and keyboard shortcuts. It demonstrates clean UI patterns and a type-safe server layer.
+
+---
+
+## Features
+
+- Inbox, Sent, Drafts, and Trash with label management
+- Threaded conversations with participants and message history
+- Rich-text composer with draft autosave
+- Search by sender, subject, and label
+- Auth-protected actions and session-aware UI
+
+---
+
+## Tech Stack
+
+- **Framework**: Next.js
+- **API**: tRPC (end-to-end typesafety)
+- **Database**: Prisma ORM
+- **Auth**: NextAuth
+- **Language**: TypeScript
+
+<BadgeGroup tags={["nextjs", "trpc", "prisma", "nextauth", "typescript"]} />
+
+<div>
+  <img src="/gmail1.png" alt="Gmail inbox view" className="rounded-xl my-6" />
+  <img src="/gmail2.png" alt="Gmail thread view" className="rounded-xl my-6" />
+</div>
+
+---
+
+## Motivation
+
+I wanted to explore email UX patterns like threading and keyboard-driven triage, while keeping a strictly typed server boundary and simple data model.
+
+---
+
+## Learnings
+
+- Modeling email threads and labels in a relational schema
+- Building accessible keyboard shortcuts in React
+- Session-aware server calls using NextAuth and tRPC
+
+---
+
+## Check it out
+
+You can explore the live project [here](https://gmail-clone-wine-six.vercel.app/).
+
+For access to a test Gmail account, please [contact me](/contacts).

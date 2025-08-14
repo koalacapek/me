@@ -1,0 +1,58 @@
+> Build databases the way you think.
+
+**Airtable Clone** is a spreadsheet-meets-database web app that lets you design flexible tables, link records, and create custom views. It focuses on a clean UX, collaborative editing, and a fully type-safe backend.
+
+---
+
+## Features
+
+- Spreadsheet-like grid with inline create, update, and delete
+- Table schemas with field types (text, number, select, date)
+- Linked records and lookups between tables
+- Saved views with filters, sorting, and grouping
+- Authenticated workspaces and per-table access control
+
+---
+
+## Tech Stack
+
+- **Framework**: Next.js
+- **API**: tRPC (end-to-end typesafety)
+- **Database**: Prisma ORM
+- **Auth**: NextAuth
+- **Language**: TypeScript
+
+<BadgeGroup tags={["nextjs", "trpc", "prisma", "nextauth", "typescript"]} />
+
+<div>
+  <img
+    src="/airtable1.png"
+    alt="Airtable grid view"
+    className="rounded-xl my-6"
+  />
+  <img
+    src="/airtable2.png"
+    alt="Airtable table schema"
+    className="rounded-xl my-6"
+  />
+</div>
+
+---
+
+## Motivation
+
+I love Airtable’s model of combining the familiarity of spreadsheets with database power. This project explores how far we can push that model using a fully type-safe stack and modern React tooling.
+
+---
+
+## Learnings
+
+- Designing normalized schemas that also feel friendly in a grid UI
+- Implementing optimistic updates and conflict handling
+- End-to-end type safety with tRPC and Prisma models
+
+---
+
+## Check it out
+
+You can explore the live project [here](https://airtable-clone-dusky.vercel.app/).
